@@ -3,88 +3,9 @@
     <head>
         <meta charset='UTF-8'>
         <title>RPS</title>
-        <script>
-            //declare a function for a random computer choice
-           function computerPlay(){
-                let playChoice = ['Rock', 'Paper', 'Scissors'];
-                let computerChoice = playChoice[Math.floor(Math.random() * playChoice.length)];
-                return computerChoice;
-            }
-            // declare a function for a round of rps with a result
-
-
-            function playRound() {
-                let computerSelection = computerPlay();
-                let playerSelection = prompt('Rock, Paper, Scissors?');
-                if (playerSelection.toLowerCase() === 'rock' & computerSelection === 'Paper'){
-                    result = 'You lose! Paper beats Rock!';
-                    roundscore = ' 0 '
-                }
-                else if (playerSelection.toLowerCase() === 'rock' & computerSelection === 'Scissors'){
-                    result = 'You win! Rock beats Scissors!';
-                    roundscore = ' 1 '
-                }
-                else if (playerSelection.toLowerCase() === 'rock' & computerSelection === 'Rock'){
-                    result = 'It is a draw!'
-                    roundscore = ' / '
-                }
-                else if (playerSelection.toLowerCase() === 'scissors' & computerSelection === 'Rock'){
-                    result = 'You lose! Rock beats Scissors!'
-                    roundscore = ' 0 '
-                }
-                else if (playerSelection.toLowerCase() === 'scissors' & computerSelection === 'Paper'){
-                    result = 'You win! Scissors beats Paper!'
-                    roundscore = ' 1 '
-                }
-                else if (playerSelection.toLowerCase() === 'scissors' & computerSelection === 'Scissors'){
-                    result = 'It is a draw!'
-                    roundscore = ' / '
-                }
-                else if (playerSelection.toLowerCase() === 'paper' & computerSelection === 'Rock'){
-                    result = 'You win! Paper beats Rock!'
-                    roundscore = ' 1 '
-                }
-                else if (playerSelection.toLowerCase() === 'paper' & computerSelection === 'Scissors'){
-                    result = 'You lose! Scissors beats Paper!'
-                    roundscore = ' 0 '
-                }
-                else if (playerSelection.toLowerCase() === 'paper' & computerSelection === 'Paper'){
-                    result = 'It is a draw!'
-                    roundscore = ' / '
-                }
-                else {
-                    result = 'Chose correctly!!';
-                    roundscore = ' / '
-                }
-                return result;
-            }
-
-//declare a game function that plays 5 round of the rock paper scissors game, keep track of the scores. 
-
-            function game() {
-                let score = 'Score is: '
-                let computerSelection = computerPlay();
-                playRound();
-                console.log(result);
-                score += roundscore;
-                playRound();
-                console.log(result);
-                score += roundscore;
-                playRound();
-                console.log(result);
-                score += roundscore;
-                playRound();
-                console.log(result);
-                score += roundscore;
-                playRound();
-                console.log(result);
-                score += roundscore;
-                console.log(score);
-            }
-
-            game();
-
-
-        </script>
+        <script src='script.js'> </script>
     </head>
+    <body>
+        <h1>Open browser's console to see results</h1>
+    </body>
 </html
