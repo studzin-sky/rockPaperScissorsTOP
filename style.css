@@ -54,3 +54,8 @@ ul {
     justify-content: space-between;
 }
 
+div#gameResult {
+    display: block;
+    position: relative;
+    left: 40%;
+}
