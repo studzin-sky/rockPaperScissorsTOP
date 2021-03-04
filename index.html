@@ -9,7 +9,6 @@
         <h1>Rock Paper Scissors</h1> <!--This is a headline-->
 
         <div id='gameResult'> <!--Here is the result of the game-->
-            <p>The final score: <br></p> 
         </div>
         <p id='instruction'>Choose and play a game against your browser!</p>
             <div class='player'>
@@ -19,14 +18,16 @@
             </div>
         
         <div class='score'>
-            <ul id='playOutcome'>
+            <ul>
                 <li>Player</li>
+                <li id='playOutcome'>0</li>
             </ul>
             <ul>
                 <li id='roundOutcome'> </li>
             </ul>
-            <ul id='browserOutcome'>
+            <ul>
                 <li>Browser</li>
+                <li id='browserOutcome'>0</li>
             </ul>
         </div>
         <script src='script.js'></script>
